@@ -1,17 +1,18 @@
 import Image from "next/image";
-import ProductsList from "./ProductsList.js";
-import products from "./products.js";
+import ProductItem from "./components/ProductItem.js";
+import products from "../data/products.js";
 
 export default function Home() {
   const shopName = (
-    <h1 className="text-4xl font-bold font-serif">Cookies and Beyond</h1>
+    <h1 className="text-4xl font-bold font-serif text-pink-500">
+      crumbl cookie
+    </h1>
   );
   const shopDescription = (
-    <p className="text-lg font-bold font-serif">Where cookie maniacs gather</p>
+    <p className="text-lg font-bold font-serif">new flavors every week!</p>
   );
 
   //This is the method of doing it in the file as suggested by the task, but to keep things cleaner I also isolated the function as its own component
-
 
   // const productsList = (
   //   <div className="flex space-x-3 justify-center">
@@ -31,6 +32,12 @@ export default function Home() {
 
   return (
     <div className="justify-center flex items-center flex-col space-y-6">
+      <Image
+        src="/logo.png"
+        width={200}
+        height={500}
+        alt="Picture of my store"
+      />
       {shopName}
       {shopDescription}
       <Image
@@ -39,8 +46,8 @@ export default function Home() {
         height={500}
         alt="Picture of my store"
       />
-      <ProductsList />
-      {/* {productsList} */} 
+      <ProductItem />
+      {/* {productsList} */}
     </div>
   );
 }
