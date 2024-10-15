@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProductItem from "./components/ProductItem.js";
+import ProductList from "./components/ProductList.js"
 import products from "../data/products.js";
 
 export default function Home() {
@@ -46,7 +46,7 @@ export default function Home() {
         height={500}
         alt="Picture of my store"
       />
-      <ProductItem />
+      <ProductList />
       {/* {productsList} */}
     </div>
   );
