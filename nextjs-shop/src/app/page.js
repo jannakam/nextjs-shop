@@ -4,12 +4,12 @@ import products from "../data/products.js";
 
 export default function Home() {
   const shopName = (
-    <h1 className="text-4xl font-bold font-serif text-pink-500">
+    <h1 className="text-4xl font-bold font-sans text-pink-500">
       crumbl cookie
     </h1>
   );
   const shopDescription = (
-    <p className="text-lg font-bold font-serif">new flavors every week!</p>
+    <p className="text-lg font-bold font-sans">new flavors every week!</p>
   );
 
   //This is the method of doing it in the file as suggested by the task, but to keep things cleaner I also isolated the function as its own component
@@ -41,7 +41,8 @@ export default function Home() {
       {shopName}
       {shopDescription}
       <Image
-        src="/Storefront1.png"
+        className="rounded-2xl"
+        src="/storefront.png"
         width={700}
         height={500}
         alt="Picture of my store"

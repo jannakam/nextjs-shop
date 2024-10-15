@@ -9,10 +9,10 @@ function ProductItem(product) {
           src={product.image}
           alt={product.name}
         />
-        <h2 className="font-bold font-serif text-xl break-normal">
+        <h2 className="font-bold font-sans text-xl break-normal">
           {product.name}
         </h2>
-        <h3 className="font-bold font-serif text-lg text-pink-500">
+        <h3 className="font-bold font-sans text-lg text-pink-500">
           {product.price}
         </h3>
       </div>
